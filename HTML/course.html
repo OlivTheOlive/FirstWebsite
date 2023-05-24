@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivie's Courses</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar and logo-->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/HTML/index.html" id="navbar__logo">OB</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/HTML/index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/HTML/course.html" class="navbar__links">Courses</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/HTML/resume.html" class="navbar__links">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero section-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>OLIVIE BERGERON</h1>
+                <h2>Courses taken </h2>
+                <p>Here is what I leared so far</p>
+            </div>
+            <div class="main__img--container">
+                <img src="/Image/undraw_online_learning_re_qw08.svg" alt="profile" id="main__img">
+            </div>
+        </div>
+    </div>
+    <!--Courses section-->
+    <div class="course">
+        <input type="text" id="userInput" onkeyup="myFunction()" placeholder="Search for course..."
+            title="Type in a name">
+        <div class="course__controls">
+            <button class="sort__button" id="sortButton">Sort Ascending</button>
+            <div>
+                <select class="level__select" id="levelSelect">
+                    <option value="all">Show All</option>
+                    <option value="level 1">Level 1</option>
+                    <option value="level 2">Level 2</option>
+                </select>
+                <button class="level__button" id="levelButton">Filter Courses</button>
+            </div>
+        </div>
+        <h1>Courses</h1>
+        <div class="course__card" id="card1">
+            <h2>Technical Mathematics for Computer Science</h2>
+            <h3>Level 1</h3>
+            <h4>Course#: MAT8001C </h4>
+            <p>As a student in Technical Mathematics for Computer Science, I learned about various algebraic operations,
+                such as exponents, scientific notation, roots and radicals, and solving equations. In addition, I gained
+                knowledge on factoring and fractions, computer number systems, Boolean algebra, trigonometry, graphing,
+                vectors, and solving systems of linear equations. Through the class, I obtained a comprehensive
+                understanding of algebraic concepts and their practical applications. </p>
+        </div>
+        <div class="course__card" id="card2">
+            <h2>Achieving Success in Changing Environments</h2>
+            <h3>Level 1</h3>
+            <h4>Course#: CST8300 </h4>
+            <p>The Achieving Success class taught students strategies to support their development in personal,
+                academic, and professional environments. The class covered six learning outcomes, including establishing
+                a personal ethical framework, implementing strategies and technologies for success in team environments,
+                and exploring the impact of Equity, Diversity, and Inclusion. Students were also taught about the role
+                of technology in society and industry and how to develop a personal and professional plan for lifelong
+                learning. Ultimately, the class aimed to equip students with the skills and knowledge necessary for
+                success in both their personal and professional lives.</p>
+        </div>
+        <div class="course__card" id="card3">
+            <h2>Introduction to Databases</h2>
+            <h3>Level 1</h3>
+            <h4>Course#: CST8215 </h4>
+            <p>As a student in Intro to Database, I learned about the key terminologies and naming conventions used in
+                database management. Throughout the course, we covered various topics, including modeling,
+                normalization, and SQL, with labs and quizzes to reinforce these concepts. By the end of the course, I
+                was able to design and manage databases, understand SQL, and use various tools and strategies for
+                database management. The course also included assignments and hybrid tasks that explored backup
+                strategies, cloud computing, and the roles and responsibilities of database professionals. Overall, the
+                course provided me with a strong foundation in database management and the skills needed to succeed in
+                this field.</p>
+        </div>
+        <div class="course__card" id="card4">
+            <h2>Introduction to Computer Programming</h2>
+            <h3>Level 1</h3>
+            <h4>Course#: CST8116</h4>
+            <p>Completed Intro to Computer Programming course which covered object-oriented programming, decision and
+                repetition structures, arrays, and good coding practices. Participated in lectures, labs, and hybrid
+                activities using Eclipse and Git. Completed lab exams and mid-term and final exams. Achieved an overall
+                understanding of Java programming and software development.</p>
+        </div>
+        <div class="course__card" id="card5">
+            <h2>Computer Essentials</h2>
+            <h3>Level 1</h3>
+            <h4>Course#: CST8101</h4>
+            <p>The course called Computer Essentials covered topics such as introduction to computer essentials,
+                password, anti-virus, malware, computer components, hardware, virtualization, hard drive partition,
+                software language, binary addition, IEEE-745 floating point, operating system, back up, command prompt &
+                batch files, and character codes. </p>
+        </div>
+        <div class="course__card" id="card6">
+            <h2>Technical Communication for Engineering Technologies</h2>
+            <h3>Level 2</h3>
+            <h4>Course#: ENL2019T</h4>
+            <p>I was introduced to various types of communication commonly used by technologists in the workplace in
+                Technical Communication for Engineering Technologies, which built on the skills I acquired in
+                Communications I. The course was designed specifically for my program of study and was centered around a
+                central project that involved in-depth research and culminated with a formal report and presentation.
+            </p>
+        </div>
+        <div class="course__card" id="card7">
+            <h2>Web Programming</h2>
+            <h3>Level 2</h3>
+            <h4>Course#: CST8285</h4>
+            <p>In this course, I was introduced to web programming concepts and technologies. The course covered various
+                topics such as HTML5, CSS, JavaScript, PHP, and databases. I learned how to create interactive websites
+                and web applications that are dynamic and responsive. Through this course, I gained valuable skills and
+                knowledge that will help me to pursue a career in web development..</p>
+        </div>
+        <div class="course__card" id="card8">
+            <h2>Object Oriented Programming (Java) </h2>
+            <h3>Level 2</h3>
+            <h4>Course#: CST8284t </h4>
+            <p>I took a Java programming course that covered important Object-Oriented Programming concepts such as
+                classes, constructors, static and instance members, inheritance, and polymorphism. I was assessed
+                through labs, quizzes, assignments, and hybrid assessments. The course also included topics such as
+                multidimensional arrays, reference types, abstraction, exception handling, and the Collections
+                Framework.</p>
+        </div>
+        <div class="course__card" id="card9">
+            <h2>Operating Systems Fundamentals</h2>
+            <h3>Level 2</h3>
+            <h4>Course#: CST8102</h4>
+            <p>In the Operating Systems Fundamentals course, I learned about the basics of operating systems and Linux,
+                as well as Linux commands and file systems. I completed labs, quizzes, and a midterm assessment,
+                covering topics such as Linux permissions, user management, and shell scripting. I also learned about if
+                statements, test conditions, functions, and arrays..</p>
+        </div>
+        <div class="course__card" id="card10">
+            <h2>Database Systems</h2>
+            <h3>Level 2</h3>
+            <h4>Course#: CST2355</h4>
+            <p>The course on Database Systems Fundamentals covered topics such as database design, SQL, and database
+                management using tools such as Microsoft Access and SQL Server. Students were assessed through labs,
+                quizzes, and a midterm exam, and learned about topics such as data modeling, connectivity, and security.
+                The course also covered additional topics such as Oracle PL/SQL and data warehousing, as well as current
+                trends in databases such as NoSQL and the cloud.</p>
+        </div>
+        <div class="course__card" id="card11">
+            <h2>Introduction to Astronomy</h2>
+            <h3>Level 2</h3>
+            <h4>Course#: AST2000</h4>
+            <p>I learned about the basics of astronomy including planets in our solar system, stars, galaxies, and
+                nebulas. I also gained knowledge about constellations and how their cultural influences shape our
+                understanding of the sky. The course covered the tools astronomers use for observation, the basic math
+                concepts used in astronomy, and the format of journal articles. Additionally, I learned about future
+                space observatories, searches for life in our solar system and beyond, and controversies in astronomy.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section-->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__logo--container">
+                <div class="footer__logo--wrap">
+                    <div class="footer__logo">
+                        <a href="#top" id="footer__logo">OB</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <a href="">Instagram</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Github</a>
+                    </div>
+                    <p class="website__right">© OB 2023. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>
